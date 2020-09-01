@@ -4,7 +4,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import javax.validation.constraints.NotEmpty;
-/*dev change*/
+/*dev change  v2*/
 @Data
 public class DemoParam {
 
