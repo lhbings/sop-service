@@ -53,7 +53,6 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
 		<dependency>
 			<groupId>com.gitee.sop</groupId>
 			<artifactId>sop-service-common</artifactId>
@@ -70,16 +69,16 @@
 			<artifactId>springfox-swagger2</artifactId>
 			<version>2.9.2</version>
 		</dependency>
-		<dependency>
+		<!--sop对应swagger ui-->
+		<!--<dependency>
 			<groupId>com.github.xiaoymin</groupId>
 			<artifactId>swagger-bootstrap-ui</artifactId>
 			<version>1.9.5</version>
-		</dependency>
-
+		</dependency>-->
 		<dependency>
-			<groupId>net.oschina.durcframework</groupId>
-			<artifactId>fastmybatis-spring-boot-starter</artifactId>
-			<version>1.9.1</version>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.9.2</version>
 		</dependency>
 
 		<dependency>
@@ -91,6 +90,12 @@
 			<groupId>net.oschina.durcframework</groupId>
 			<artifactId>easyopen-spring-boot-starter</artifactId>
 			<version>1.16.9</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus-boot-starter</artifactId>
+			<version>3.3.1</version>
 		</dependency>
 	</dependencies>
 

@@ -14,7 +14,7 @@ import java.util.Date;
 public class DemoController {
 
 
-    @ApiOperation(value = "demo查询详情",notes = "查询id，名称等详细信息")
+//    @ApiOperation(value = "demo查询详情",notes = "查询id，名称等详细信息")
     @Open(value = "service.demo.get",version = "1.0")
     @RequestMapping("get")
     public DemoResult getResult( DemoParam param) {
