@@ -1,0 +1,47 @@
+server:
+  port: 2221
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  application:
+    name: sop-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/erp_local?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  http:
+    encoding:
+      charset: utf-8
+      force: true
+      enabled: true
+  rabbitmq:
+    host: localhost
+    username: guest
+    password: guest
+    port: 5672
+    virtual-host: /test
+    publisher-confirms: true
+    publisher-returns: true
+    listener:
+      simple:
+        acknowledge-mode: manual
+
+
+mybatis-plus:
+  type-aliases-package: com.example.sopservice.entity
+  global-config:
+    db-config:
+      id-type: auto
+      logic-not-delete-value: 0
+      logic-delete-value: 1
+  mapper-locations: classpath:mapper/*.xml
+
+
+
+
