@@ -21,9 +21,9 @@ spring:
       force: true
       enabled: true
   rabbitmq:
-    host: localhost
-    username: guest
-    password: guest
+    host: 119.45.176.242
+    username: admin
+    password: admin
     port: 5672
     virtual-host: /test
     publisher-confirms: true
@@ -31,6 +31,9 @@ spring:
     listener:
       simple:
         acknowledge-mode: manual
+  redis:
+    host: 119.45.176.242
+    port: 6379
 
 
 mybatis-plus:
@@ -41,6 +44,7 @@ mybatis-plus:
       logic-not-delete-value: 0
       logic-delete-value: 1
   mapper-locations: classpath:mapper/*.xml
+
 
 
 
