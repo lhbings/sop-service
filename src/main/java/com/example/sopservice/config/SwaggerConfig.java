@@ -25,7 +25,7 @@ public class SwaggerConfig {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("Spring Boot中使用Swagger2构建RESTful APIs")
-                .description("基于springBoot的整合开发3")
+                .description("基于springBoot的整合开发4")
                 .version("1.0")
                 .build();
     }
